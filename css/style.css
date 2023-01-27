@@ -1,0 +1,39 @@
+/*
+-------------
+Reset
+-------------
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+-------------
+Typo
+-------------
+*/
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/*
+-------------
+General
+-------------
+*/
+
+.container {
+    margin: 0 auto;
+}
+
+.big {
+    width: 80%;
+}
+
+.small {
+    width: 60%;
+}
