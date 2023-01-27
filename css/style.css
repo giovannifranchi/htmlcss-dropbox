@@ -20,6 +20,15 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
 /*
 -------------
 General
@@ -36,4 +45,61 @@ General
 
 .small {
     width: 60%;
+}
+
+ul {
+    height: 100%;
+}
+
+.img-fluid {
+    width: 100%;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+}
+
+.primary {
+    background-color: #0061ff;
+    color: white;
+    padding: 5px 10px;
+}
+
+
+
+/*
+-------------
+Header
+-------------
+*/
+
+header {
+    height: 55px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .nav-items {
+    display: flex;
+}
+
+header nav .nav-items .nav-item {
+    padding: 15px;
+}
+
+header nav .nav-items .nav-item:not(.logo):hover {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.btn-item {
+    padding: 10px;
+}
+
+.btn.primary:hover {
+    background-color: rgb(0, 97, 255, 0.8);
 }
