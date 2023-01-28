@@ -20,13 +20,62 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
+h1 {
+    font-size: 55px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+    width: 100%;
+    display: inline-block;
 }
 
 ul {
     list-style: none;
+}
+
+/*
+-------------
+Colors
+-------------
+*/
+
+.light-green {
+    background-color: #a2d39b;
+    border: 10px solid #d1e9cd;
+}
+
+.crimson {
+    background-color: #61082b;
+}
+
+.cobalt {
+    background-color: #0093ce;
+}
+
+.red {
+    background-color: #ff1c1c;
+}
+
+.grey {
+    background-color: #f5f5f5;
+}
+
+.dark-red {
+    background-color: #d5001f;
+}
+
+.azure {
+    background-color: #b4d0e7;
+}
+
+.blue {
+    background-color: #0d2481;
+}
+
+.yellow {
+    background-color: #ffd830;
 }
 
 /*
@@ -37,10 +86,11 @@ General
 
 .container {
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 .big {
-    width: 80%;
+    width: 65%;
 }
 
 .small {
@@ -66,7 +116,17 @@ ul {
     padding: 5px 10px;
 }
 
+.secondary {
+    background-color: #fff;
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    text-align: center;
+}
 
+hr {
+    width: 15%;
+}
 
 /*
 -------------
@@ -80,6 +140,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 200;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
 }
@@ -103,3 +165,386 @@ header nav .nav-items .nav-item:not(.logo):hover {
 .btn.primary:hover {
     background-color: rgb(0, 97, 255, 0.8);
 }
+
+/*
+-------------
+Main
+-------------
+*/
+
+main {
+    margin-top: 55px;
+}
+
+main .light-blue {
+    background-color: #b4d0e7;
+}
+
+.jumbo-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    top: 50px
+}
+
+.jumbo-container i {
+    font-size: 20px;
+}
+
+
+
+.jumbo-container .left-area > * {
+    margin-bottom: 20px;
+}
+
+/*
+-------------
+Cards
+-------------
+*/
+
+.row-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px -20px 40px 0;
+}
+
+.card {
+    width: calc(100% / 3 - 20px);
+    border: 2px solid rgba(208, 208, 211, 0.7);;
+    font-weight: 300;
+}
+
+.horizontal {
+    width: 100%;
+}
+
+.card-header {
+    border-bottom: 2px solid rgba(208, 208, 211, 0.7);
+    padding: 5px 0;
+    text-align: center;
+}
+
+.card-main, .card-footer {
+    padding: 20px 15px;
+}
+
+.card-user,
+.card-memory,
+.card-functions,
+.card-footer-features {
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+}
+
+.card-main h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.offer-period {
+    font-weight: 200;
+}
+
+.card-user {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.card-functions {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.card .btn {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.card .card-buy-now a {
+    width: auto;
+}
+
+.card .card-buy-now {
+    margin-bottom: 30px;
+}
+
+.card-user::before {
+    font-family: 'FontAwesome';
+    content: '\f007';
+}
+
+.card-memory::before {
+    font-family: 'FontAwesome';
+    content: '\f07b';
+}
+
+.card-functions::before {
+    font-family: 'FontAwesome';
+    content: '\f1e0'; 
+}
+
+.card-buy-now a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.card-footer-features {
+    margin: 20px 0;
+}
+
+.card-footer-features::before {
+    font-family: 'FontAwesome';
+    content: '\f00c';
+    color: #6b6dff;
+}
+
+.horizontal .card-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.horizontal .card-main .card-info {
+    width: 60%;
+} 
+
+.horizontal .card-main .card-info .price {
+    font-weight: 500;
+}
+
+.horizontal .card-main .card-info p {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.horizontal .card-main .btn {
+    padding: 5px 30px;
+}
+
+.cards-bottom-section {
+    display: flex;
+    gap: 40px;
+    margin: 150px 0;
+}
+
+.cards-bottom-section .right-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px 0;
+    width: 90%;
+}
+
+.cards-bottom-section .right-area h4 {
+    font-size: 20px;
+}
+
+.cards-bottom-section .right-area .btn {
+    width: 60%;
+    font-size: 14px;
+}
+
+.card-2 {
+    width: calc(100% / 3 - 20px);
+}
+
+.cards-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+.container.small h2 {
+    font-size: 40px;
+    margin-bottom: 80px;
+}
+
+.card-2 .card-main h3 {
+    margin-bottom: 30px;
+}
+
+.card-2 .card-main p {
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+/*
+-------------
+Partners Section
+-------------
+*/
+
+.partners a {
+    text-decoration: underline;
+    color: #0061ff;
+}
+
+.banner-area-container {
+    display: flex;
+    margin-top: 150px;
+}
+
+.banner-area {
+    width: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-box {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-box img {
+    color: #fff;
+}
+
+.banner-box:before {
+    content: "";
+    display: block;
+    padding-top: 100%; 
+}
+
+.banner-area.mid.grey {
+    padding: 50px;
+}
+
+.banner-area.mid.grey p {
+    margin: 50px 0;
+}
+
+.banner-area.mid.grey .img-fluid {
+    width: 50%;
+}
+
+.banners-ads .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.banners-ads .container .left-area {
+    width: 70%;
+}
+
+.banners-ads .container .btn {
+    align-self: flex-start;
+}
+
+.banners-ads .container .left-area h2 {
+    color:#61082b
+}
+
+/*
+-------------
+Questions
+-------------
+*/
+
+.question-title, .question-row-container {
+    border-bottom: 1px solid black;
+}
+
+.question-row {
+    padding: 30px 15px 30px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.answer-container {
+    display: none;
+}
+
+.off {
+    display: none;
+}
+
+.question-row:hover + .answer-container {
+    display: block;
+}
+
+.question-row:hover .on {
+    display: none;
+}
+
+.question-row:hover .off {
+    display: block;
+}
+
+/*
+-------------
+Footer
+-------------
+*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    margin-top: 150px;
+}
+
+.footer-col-container {
+    display: flex;
+}
+
+.footer-col {
+    width: calc(100% / 5);
+}
+
+.footer-col h3 {
+    margin-bottom: 30px;
+} 
+
+.footer-col a {
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    margin: 50px 0;
+}
+
+.language-section {
+    padding-bottom: 30px;
+}
+
+.language-section::after {
+    font-family: 'FontAwesome';
+    content: '\f077';
+    padding-left: 5px;
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+
+/* 
+
+TODO DEBUG
+
+**********************
+
+JUMBO: proporzione tra img e testo settando ad entrambi width
+
+CARDS-1: spaziature omogenee e modellazione radio buttons
+
+CARDS-2: sistemare margine sinistro a container small per gap e allineamento tra foto e tetsto
+
+BANNER-ADS: spaziatura e allineamento tra bottono e h2
+
+QUESTIONS: fluidificare hover con posiion absolute e opacity
+
+***********************
+*/
