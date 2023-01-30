@@ -108,24 +108,29 @@ ul {
 
 .btn {
     display: inline-block;
+    cursor: pointer;
+    padding: 0.7em 1em;
+
 }
 
 .primary {
     background-color: #0061ff;
     color: white;
-    padding: 5px 10px;
+    border: 0;
 }
 
 .secondary {
     background-color: #fff;
     color: black;
-    padding: 5px 10px;
     border: 1px solid black;
-    text-align: center;
 }
 
 hr {
     width: 15%;
+}
+
+input[type = 'radio'] {
+    margin-left: 20px;
 }
 
 /*
@@ -135,7 +140,7 @@ Header
 */
 
 header {
-    height: 55px;
+    height: 80px;
     position: fixed;
     top: 0;
     left: 0;
@@ -147,11 +152,13 @@ header {
 }
 
 header nav .nav-items {
-    display: flex;
+    display: flex; 
 }
 
-header nav .nav-items .nav-item {
-    padding: 15px;
+header nav .nav-items .nav-item, .btn-item {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
 }
 
 header nav .nav-items .nav-item:not(.logo):hover {
@@ -173,7 +180,7 @@ Main
 */
 
 main {
-    margin-top: 55px;
+    margin-top: 80px;
 }
 
 main .light-blue {
@@ -184,24 +191,48 @@ main .light-blue {
     display: flex;
     align-items: flex-start;
     position: relative;
-    top: 50px
+    top: 55px;
+    padding-bottom: 10px;
 }
 
 .jumbo-container i {
     font-size: 20px;
 }
 
+.jumbo-container .left-area {
+    width: 30%;
+}
 
+.jumbo-container .right-area {
+    width: 70%;
+}
 
 .jumbo-container .left-area > * {
     margin-bottom: 20px;
 }
+
+.jumbo-container .left-area > .arrow-icon {
+    margin-top: 50px;
+}
+
+.jumbo-container .left-area .arrow-icon a i {
+    font-size: 30px;
+}
+
+#offers {
+    padding-top: 80px;
+}
+
 
 /*
 -------------
 Cards
 -------------
 */
+
+.cards-container {
+    padding-top: 50px;
+}
 
 .row-cards {
     display: flex;
@@ -259,10 +290,18 @@ Cards
 }
 
 .card .btn {
-    display: block;
     text-align: center;
+    width: 100%;
     padding: 10px 0;
     margin-bottom: 30px;
+}
+
+.card.horizontal .card-main .card-info {
+    width: 70%;
+}
+
+.card.horizontal .card-main .card-btn-container {
+    width: 30%;
 }
 
 .card .card-buy-now a {
@@ -353,9 +392,14 @@ Cards
     width: calc(100% / 3 - 20px);
 }
 
+/* #cards-2-section .container.small {
+    margin-left: -20px;
+} */
+
 .cards-container-2 {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -10px;
     gap: 40px 20px;
 }
 
@@ -378,6 +422,10 @@ Cards
 Partners Section
 -------------
 */
+
+#partners-section {
+    padding-top: 150px;
+}
 
 .partners a {
     text-decoration: underline;
@@ -425,18 +473,32 @@ Partners Section
     width: 50%;
 }
 
+.banners-ads {
+    padding: 100px 0;
+}
+
 .banners-ads .container {
     display: flex;
-    align-items: center;
     gap: 30px;
+    padding: 0;
+}
+
+.banners-ads .container h2 {
+    margin: 0;
 }
 
 .banners-ads .container .left-area {
     width: 70%;
 }
 
+.banners-ads .container .right-area {
+    width: 30%;
+}
+
 .banners-ads .container .btn {
-    align-self: flex-start;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
 }
 
 .banners-ads .container .left-area h2 {
@@ -448,6 +510,10 @@ Partners Section
 Questions
 -------------
 */
+
+.questions {
+    padding-top: 50px;
+}
 
 .question-title, .question-row-container {
     border-bottom: 1px solid black;
@@ -536,13 +602,9 @@ TODO DEBUG
 
 **********************
 
-JUMBO: proporzione tra img e testo settando ad entrambi width
 
-CARDS-1: spaziature omogenee e modellazione radio buttons
 
 CARDS-2: sistemare margine sinistro a container small per gap e allineamento tra foto e tetsto
-
-BANNER-ADS: spaziatura e allineamento tra bottono e h2
 
 QUESTIONS: fluidificare hover con posiion absolute e opacity
 
