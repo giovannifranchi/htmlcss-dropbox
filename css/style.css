@@ -149,6 +149,7 @@ header {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    box-shadow: 1px 14px 10px -16px rgba(0,0,0,0.91);
 }
 
 header nav .nav-items {
@@ -361,10 +362,6 @@ Cards
     font-size: 15px;
 }
 
-.horizontal .card-main .btn {
-    padding: 5px 30px;
-}
-
 .cards-bottom-section {
     display: flex;
     gap: 40px;
@@ -497,7 +494,6 @@ Partners Section
 
 .banners-ads .container .btn {
     width: 100%;
-    padding: 15px 10px;
     border: 0;
 }
 
@@ -511,7 +507,7 @@ Questions
 -------------
 */
 
-.questions {
+#questions {
     padding-top: 50px;
 }
 
@@ -604,9 +600,6 @@ TODO DEBUG
 
 
 
-CARDS-2: sistemare margine sinistro a container small per gap e allineamento tra foto e tetsto
-
-QUESTIONS: fluidificare hover con posiion absolute e opacity
 
 ***********************
 */
