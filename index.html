@@ -8,7 +8,7 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <!-- /Google Font -->
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,7 +17,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header class="nav">
         <!-- Nav -->
         <nav class="header-nav">
             <ul class="nav-items">
@@ -71,7 +71,7 @@
     </header>
     <!-- /Header -->
     <!-- Main -->
-    <main>
+    <main class="main-body">
         <!-- Section Big -->
         <section class="light-blue" id="jumbotron">
             <div class="container big">
@@ -105,7 +105,7 @@
         <!-- Section small -->
         <section id="offers">
             <div class="container small">
-                <h2>Trova il piano business che pa per te</h2>
+                <h2>Trova il piano business che fa per te</h2>
                 <input type="radio" value="radio-1">
                 <label for="radio-1">Fatturazione mensile</label>
                 <input type="radio" value="radio-2">
@@ -116,159 +116,210 @@
                         <!-- Card -->
                     <div class="card">
                         <!-- Card Header -->
-                        <div class="card-header">
+                        <header class="card-header">
                             <h5 class="card-offer">
                                 <i class="fa-solid fa-user"></i>
                                 Singolo
                             </h5>
-                        </div>
+                        </header>
                         <!-- /Card Header -->
                         <!-- Card Main -->
-                        <div class="card-main">
+                        <main class="card-main">
                             <h4>Professional</h4>
                             <div class="price">
-                                € 12.00
+                                <strong>€ 12.00</strong>
                             </div>
                             <span class="offer-period">/mese</span>
-                            <div class="card-user">
-                                1 Utente
-                            </div>
-                            <div class="card-memory">
-                                5 TB di spazio di archiviazione sicuro
-                            </div>
-                            <div class="card-functions">
-                                Funzioni di produttività premium e condivisione file semplice e sicura
-                            </div>
+                            <ul class="features">
+                                <li>
+                                    <div class="card-user">
+                                        1 Utente
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-memory">
+                                        5 TB di spazio di archiviazione sicuro
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-functions">
+                                        Funzioni di produttività premium e condivisione file semplice e sicura
+                                    </div>
+                                </li>
+                            </ul>
                             <button class="btn primary">Inizia</button>
                             <div class="card-buy-now">
                                 oppure
                                 <a href="#">acquista ora</a>
                             </div>
                             <hr>
-                        </div>
+                        </main class = "main-body">
                         <!-- /Card Main-->
                         <!-- Card Footer -->
-                        <div class="card-footer">
+                        <footer class="card-footer">
                             <strong>
                                 Punti Salienti del piano
                             </strong>
-                            <div class="card-footer-features">
-                                Invia file fino a 100 GB con Dropbox Transfert
-                            </div>
-                            <div class="card-footer-features">
-                                Cartelle offline su dispositivi mobili
-                            </div>
-                        </div>
+                            <ul class="card-footer-features-container">
+                                <li>
+                                    <div class="card-footer-features">
+                                        Invia file fino a 100 GB con Dropbox Transfert
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-footer-features">
+                                        Cartelle offline su dispositivi mobili
+                                    </div>
+                                </li>
+                            </ul>
+                        </footer>
                         <!-- /Card Footer -->
                     </div>
                     <!-- /Card -->
                     <!-- Card -->
                     <div class="card">
                         <!-- Card Header -->
-                        <div class="card-header">
+                        <header class="card-header">
                             <h5 class="card-offer">
                                 <i class="fa-solid fa-users"></i>
                                 Team
                             </h5>
-                        </div>
+                        </header>
                         <!-- /Card Header -->
                         <!-- Card Main -->
-                        <div class="card-main">
+                        <main class="card-main">
                             <h4>Advanced</h4>
                             <div class="price">
-                                € 18.00
+                                <strong>€ 18.00</strong>
                             </div>
                             <span class="offer-period">/utente/mese</span>
-                            <div class="card-user">
-                                3 o più utenti
-                            </div>
-                            <div class="card-memory">
-                                Tutto lo spazio di cui ha bisogno il tuo team
-                            </div>
-                            <div class="card-functions">
-                                Sofisticate funzioni di controllo per tenere al sicuro tutti i file del tuo team
-                            </div>
+                            <ul class="features">
+                                <li>
+                                    <div class="card-user">
+                                        3 o più utenti
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-memory">
+                                        Tutto lo spazio di cui ha bisogno il tuo team
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-functions">
+                                        Sofisticate funzioni di controllo per tenere al sicuro tutti i file del tuo team
+                                    </div>
+                                </li>
+                            </ul>
                             <button class="btn primary">Inizia</button>
                             <div class="card-buy-now">
                                 oppure
                                 <a href="#">acquista ora</a>
                             </div>
                             <hr>
-                        </div>
+                        </main>
                         <!-- /Card Main-->
                         <!-- Card Footer -->
-                        <div class="card-footer">
+                        <footer class="card-footer">
                             <strong>
                                 Punti Salienti del piano
                             </strong>
-                            <div class="card-footer-features">
-                                Nessun limite di spazio per i file
-                            </div>
-                            <div class="card-footer-features">
-                                Cartelle offline su dispositivi mobili
-                            </div>
-                            <div class="card-footer-features">
-                                Risparmio del 50% rispetto alle iscrizioni singole
-                            </div>
-                            <div class="card-footer-features">
-                                Possibilità di inserire nuovi membri del team
-                            </div>
-                            <div class="card-footer-features">
-                                Gestione dei permessi in base ai ruoli
-                            </div>
-                        </div>
+                            <ul class="card-footer-features-container">
+                                <li>
+                                    <div class="card-footer-features">
+                                        Nessun limite di spazio per i file
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-footer-features">
+                                        Cartelle offline su dispositivi mobili
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-footer-features">
+                                        Risparmio del 50% rispetto alle iscrizioni singole
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-footer-features">
+                                        Possibilità di inserire nuovi membri del team
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-footer-features">
+                                        Gestione dei permessi in base ai ruoli
+                                    </div>
+                                </li>
+                            </ul>
+                        </footer>
                         <!-- /Card Footer -->
                     </div>
                     <!-- /Card -->
                     <!-- Card -->
                     <div class="card">
                         <!-- Card Header -->
-                        <div class="card-header">
+                        <header class="card-header">
                             <h5 class="card-offer">
                                 <i class="fa-solid fa-building"></i>
                                 Azienda
                             </h5>
-                        </div>
+                        </header>
                         <!-- /Card Header -->
                         <!-- Card Main -->
-                        <div class="card-main">
+                        <main class="card-main">
                             <h4>Enterprise</h4>
                             <div class="price">
                                 Contattaci
                             </div>
                             <span class="offer-period">-</span>
-                            <div class="card-user">
-                                10 o più utenti
-                            </div>
-                            <div class="card-memory">
-                                Soluzioni personalizzabili per la tua azienda
-                            </div>
-                            <div class="card-functions">
-                                Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
-                            </div>
+                            <ul class="features">
+                                <li>
+                                    <div class="card-user">
+                                        10 o più utenti
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-memory">
+                                        Soluzioni personalizzabili per la tua azienda
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-functions">
+                                        Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala
+                                    </div>
+                                </li>
+                            </ul>
+
                             <button class="btn primary">Inizia</button>
                             <div class="card-buy-now">
                                 oppure
                                 <a href="#">acquista ora</a>
                             </div>
                             <hr>
-                        </div>
+                        </main>
                         <!-- /Card Main-->
                         <!-- Card Footer -->
-                        <div class="card-footer">
+                        <footer class="card-footer">
                             <strong>
                                 Punti Salienti del piano
                             </strong>
-                            <div class="card-footer-features">
-                                Cartella offline su dispositivi mobili
-                            </div>
-                            <div class="card-footer-features">
-                                Servizio assistenza 24/h
-                            </div>
-                            <div class="card-footer-features">
-                                Possibilità di personalizzazione totale
-                            </div>
-                        </div>
+                            <ul class="card-footer-features-container">
+                                <li>
+                                    <div class="card-footer-features">
+                                        Cartella offline su dispositivi mobili
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-footer-features">
+                                        Servizio assistenza 24/h
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="card-footer-features">
+                                        Possibilità di personalizzazione totale
+                                    </div>
+                                </li>
+                            </ul>
+                        </footer>
                         <!-- /Card Footer -->
                     </div>
                     <!-- /Card -->
@@ -276,15 +327,15 @@
                     <!-- Card -->
                     <div class="card horizontal">
                         <!-- Card Header -->
-                        <div class="card-header">
+                        <header class="card-header">
                             <h5 class="card-offer">
                                 <i class="fa-solid fa-building"></i>
                                 Team
                             </h5>
-                        </div>
+                        </header>
                         <!-- /Card Header -->
                         <!-- Card Main -->
-                        <div class="card-main">
+                        <main class="card-main">
                             <div class="card-info">
                                 <h4>Enterprise</h4>
                                 <div class="price">
@@ -295,7 +346,7 @@
                             <div class="card-btn-container">
                                 <button class="btn primary">Inizia</button>
                             </div>
-                        </div>
+                        </main>
                         <!-- /Card Main-->
                     </div>
                     <!-- /Card --> 
@@ -407,43 +458,49 @@
             <div class="banner-area-container">
                 <!-- Banner left -->
                 <div class="banner-area left">
-                    <div class="banner-box light-green">
-                        <img src="img/designit-white.svg" alt="Designit" class="img-fluid">
-                    </div>
-                    <div class="banner-box crimson">
-                        <img src="img/arizona_state_university.svg" alt="Arizona State University" class="img-fluid">
-                    </div>
-                    <div class="banner-box cobalt">
-                        <img src="img/university_of_florida.svg" alt="University of Florida" class="img-fluid">
-                    </div>
-                    <div class="banner-box red">
-                        <img src="img/topps.svg" alt="Topps" class="img-fluid">
+                    <div class="box-container">
+                        <div class="banner-box light-green">
+                            <img src="img/designit-white.svg" alt="Designit" class="img-fluid">
+                        </div>
+                        <div class="banner-box crimson">
+                            <img src="img/arizona_state_university.svg" alt="Arizona State University" class="img-fluid">
+                        </div>
+                        <div class="banner-box cobalt">
+                            <img src="img/university_of_florida.svg" alt="University of Florida" class="img-fluid">
+                        </div>
+                        <div class="banner-box red">
+                            <img src="img/topps.svg" alt="Topps" class="img-fluid">
+                        </div>
                     </div>
                 </div>
                 <!-- /Banner left -->
                 <!-- Banner Mid -->
                 <div class="banner-area mid grey">
-                    <div class="banner-logo">
-                        <img src="img/designit.svg" alt="Designit" class="img-fluid">
-                        <hr>
-                        <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste eigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper."</p>
-                        <div>Morten Thomsen, Global IT Lead</div>
+                    <div class="box-container mid">
+                        <div class="banner-logo">
+                            <img src="img/designit.svg" alt="Designit" class="img-fluid">
+                            <hr>
+                            <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste eigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper."</p>
+                            <div>Morten Thomsen, Global IT Lead</div>
+                        </div>
                     </div>
                 </div>
                 <!-- /Banner Mid -->
                 <!-- Banner right -->
                 <div class="banner-area right dark-red">
-                    <div class="banner-box">
-                        <img src="img/world_bicycle_relief.svg" alt="Bycicle Relief" class="img-fluid">
-                    </div>
-                    <div class="banner-box azure">
-                        <img src="img/hearst_corp.svg" alt="hearst_corp" class="img-fluid">
-                    </div>
-                    <div class="banner-box blue">
-                        <img src="img/lonely_planet.svg" alt="Lonely Planet" class="img-fluid">
-                    </div>
-                    <div class="banner-box yellow">
-                        <img src="img/clear_channel.svg" alt="Clear Channel" class="img-fluid">
+                    <div class="box-container">
+                        <div class="banner-box">
+                            <img src="img/world_bicycle_relief.svg" alt="Bycicle Relief" class="img-fluid">
+                        </div>
+                        <div class="banner-box azure">
+                            <img src="img/hearst_corp.svg" alt="hearst_corp" class="img-fluid">
+                        </div>
+                        <div class="banner-box blue">
+                            <img src="img/lonely_planet.svg" alt="Lonely Planet" class="img-fluid">
+                        </div>
+                        <div class="banner-box yellow">
+                            <img src="img/clear_channel.svg" alt="Clear Channel" class="img-fluid">
+                        </div>
                     </div>
                 </div>
                 <!-- /Banner right -->
@@ -516,49 +573,109 @@
     </main>
     <!-- /Main -->
     <!-- Footer -->
-    <footer>
+    <footer class="footer-body">
         <div class="container big">
             <!-- Footer-col-container -->
             <div class="footer-col-container">
                 <div class="footer-col">
                     <h3>Dropbox</h3>
-                    <a href="#">Applicazione desktop</a>
-                    <a href="#">Perché Dropbox</a>
-                    <a href="#">Piani</a>
-                    <a href="#">Sicurezza</a>
-                    <a href="#">Funzioni</a>
+                    <ul>
+                        <li>
+                            <a href="#">Applicazione desktop</a>
+                        </li>
+                        <li>
+                            <a href="#">Perché Dropbox</a>
+                        </li>
+                        <li>
+                            <a href="#">Piani</a>
+                        </li>
+                        <li>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Prodotti</h3>
-                    <a href="#">Applicazione desktop</a>
-                    <a href="#">Perché Dropbox</a>
-                    <a href="#">Piani</a>
-                    <a href="#">Sicurezza</a>
-                    <a href="#">Funzioni</a>
+                    <ul>
+                        <li>
+                            <a href="#">Applicazione desktop</a>
+                        </li>
+                        <li>
+                            <a href="#">Perché Dropbox</a>
+                        </li>
+                        <li>
+                            <a href="#">Piani</a>
+                        </li>
+                        <li>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Azienda</h3>
-                    <a href="#">Applicazione desktop</a>
-                    <a href="#">Perché Dropbox</a>
-                    <a href="#">Piani</a>
-                    <a href="#">Sicurezza</a>
-                    <a href="#">Funzioni</a>
+                    <ul>
+                        <li>
+                            <a href="#">Applicazione desktop</a>
+                        </li>
+                        <li>
+                            <a href="#">Perché Dropbox</a>
+                        </li>
+                        <li>
+                            <a href="#">Piani</a>
+                        </li>
+                        <li>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Supporto</h3>
-                    <a href="#">Applicazione desktop</a>
-                    <a href="#">Perché Dropbox</a>
-                    <a href="#">Piani</a>
-                    <a href="#">Sicurezza</a>
-                    <a href="#">Funzioni</a>
+                    <ul>
+                        <li>
+                            <a href="#">Applicazione desktop</a>
+                        </li>
+                        <li>
+                            <a href="#">Perché Dropbox</a>
+                        </li>
+                        <li>
+                            <a href="#">Piani</a>
+                        </li>
+                        <li>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="footer-col">
                     <h3>Community</h3>
-                    <a href="#">Applicazione desktop</a>
-                    <a href="#">Perché Dropbox</a>
-                    <a href="#">Piani</a>
-                    <a href="#">Sicurezza</a>
-                    <a href="#">Funzioni</a>
+                    <ul>
+                        <li>
+                            <a href="#">Applicazione desktop</a>
+                        </li>
+                        <li>
+                            <a href="#">Perché Dropbox</a>
+                        </li>
+                        <li>
+                            <a href="#">Piani</a>
+                        </li>
+                        <li>
+                            <a href="#">Sicurezza</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- /Footer-col-container -->

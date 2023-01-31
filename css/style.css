@@ -17,11 +17,11 @@ Typo
 */
 
 body {
-    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 77px;
 }
 
 a {
@@ -90,15 +90,11 @@ General
 }
 
 .big {
-    width: 65%;
+    max-width: 1192px;
 }
 
 .small {
-    width: 60%;
-}
-
-ul {
-    height: 100%;
+    max-width: 1000px;
 }
 
 .img-fluid {
@@ -129,9 +125,6 @@ hr {
     width: 15%;
 }
 
-input[type = 'radio'] {
-    margin-left: 20px;
-}
 
 /*
 -------------
@@ -139,8 +132,9 @@ Header
 -------------
 */
 
-header {
+header.nav {
     height: 80px;
+    line-height: 80px;
     position: fixed;
     top: 0;
     left: 0;
@@ -184,7 +178,7 @@ Main
 -------------
 */
 
-main {
+main.main-body {
     margin-top: 80px;
 }
 
@@ -194,9 +188,8 @@ main .light-blue {
 
 .jumbo-container {
     display: flex;
-    align-items: flex-start;
     position: relative;
-    top: 55px;
+    top:80px;
     padding-bottom: 10px;
 }
 
@@ -206,6 +199,7 @@ main .light-blue {
 
 .jumbo-container .left-area {
     width: 30%;
+    position: relative;
 }
 
 .jumbo-container .right-area {
@@ -217,11 +211,12 @@ main .light-blue {
 }
 
 .jumbo-container .left-area > .arrow-icon {
-    margin-top: 50px;
+    position: absolute;
+    bottom: 50px;
 }
 
 .jumbo-container .left-area .arrow-icon a i {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 #offers {
@@ -263,7 +258,7 @@ Cards
 }
 
 .card-main, .card-footer {
-    padding: 20px 15px;
+    padding: 20px 40px;
 }
 
 .card-user,
@@ -272,7 +267,6 @@ Cards
 .card-footer-features {
     display: flex;
     gap: 5px;
-    font-size: 15px;
 }
 
 .card-main h4 {
@@ -363,7 +357,6 @@ Cards
 
 .horizontal .card-main .card-info p {
     margin-top: 30px;
-    font-size: 15px;
 }
 
 .cards-bottom-section {
@@ -386,16 +379,12 @@ Cards
 
 .cards-bottom-section .right-area .btn {
     width: 60%;
-    font-size: 14px;
+   
 }
 
 .card-2 {
     width: calc(100% / 3 - 20px);
 }
-
-/* #cards-2-section .container.small {
-    margin-left: -20px;
-} */
 
 .cards-container-2 {
     display: flex;
@@ -414,7 +403,6 @@ Cards
 }
 
 .card-2 .card-main p {
-    font-size: 13px;
     line-height: 1.5em;
 }
 
@@ -438,14 +426,34 @@ Partners Section
     margin-top: 150px;
 }
 
-.banner-area {
-    width: calc(100% / 3);
+.banner-area::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+.box-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-wrap: wrap;
 }
 
+.box-container.mid {
+    padding: 50px;
+}
+
+.banner-area {
+    width: calc(100% / 3);
+    position: relative;
+}
+
 .banner-box {
     width: 50%;
+    height: 50%;
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -454,12 +462,6 @@ Partners Section
 
 .banner-box img {
     color: #fff;
-}
-
-.banner-box:before {
-    content: "";
-    display: block;
-    padding-top: 100%; 
 }
 
 .banner-area.mid.grey {
@@ -527,6 +529,7 @@ Questions
 }
 
 .answer-container {
+    padding-bottom: 30px;
     display: none;
 }
 
@@ -552,7 +555,7 @@ Footer
 -------------
 */
 
-footer {
+footer.footer-body {
     background-color: #000;
     color: #fff;
     margin-top: 150px;
@@ -571,7 +574,6 @@ footer {
 } 
 
 .footer-col a {
-    font-size: 13px;
     font-weight: 200;
 }
 
@@ -592,7 +594,6 @@ footer hr {
     content: '\f077';
     padding-left: 5px;
     vertical-align: middle;
-    font-size: 10px;
 }
 
 
